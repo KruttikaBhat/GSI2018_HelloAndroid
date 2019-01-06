@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dell.helloandroid.MainActivity">
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/udacity" />
+    <TextView
+        android:id="@+id/Title"
+        android:padding="8dp"
+        android:fontFamily="cursive"
+        android:textSize="32sp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Udacity"
+        />
+    <TextView
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:id="@+id/Address"
+        android:paddingLeft="8dp"
+        android:layout_above="@id/AddressVal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address:"
+        />
+    <TextView
+        android:id="@+id/AddressVal"
+        android:paddingLeft="8dp"
+        android:paddingBottom="8dp"
+        android:layout_above="@id/Phone"
+        android:layout_alignParentLeft="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2465 Latham St\nMountain View, CA 94043"
+         />
+    <TextView
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:id="@+id/Phone"
+        android:paddingLeft="8dp"
+        android:layout_above="@id/PhoneVal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone Number:"
+        />
+    <TextView
+        android:id="@+id/PhoneVal"
+        android:paddingLeft="8dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="650-555-5555"
+        />
+
+
+</RelativeLayout>
